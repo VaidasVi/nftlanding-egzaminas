@@ -1,1 +1,99 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.hamburger-icon {
+  width: 30px;
+}
+
+header {
+  margin: 32px auto;
+  max-width: 90%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  margin: 0;
+  max-width: 100%;
+}
+
+.sign-up {
+  max-width: 100%;
+  margin-left: 22.5px;
+  margin-right: 0;
+}
+
+.sign-up p:first-child {
+  color: #ff3998;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sign-up h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+}
+
+.sign-up p:nth-child(3) {
+  color: #555555;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.sign-up .button {
+  margin-top: 2rem;
+  width: 170px;
+  border: 4px solid transparent;
+  border-radius: 50px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, white, white), linear-gradient(140deg, #ff3998, #ff8139, #39ffa0);
+}
+
+.sign-up .btn {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.2rem 1.8rem;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.sign-up a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sign-up img {
+  position: absolute;
+  width: 65%;
+  height: 45%;
+  left: 50%;
+}
+
+.sign-up .signup-content {
+  padding-top: 4.5rem;
+  max-width: 55%;
+  position: absolute;
+}
+
+/* Created with https://www.css-gradient.com */
+/*# sourceMappingURL=styles.css.map */
