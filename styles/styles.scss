@@ -26,9 +26,7 @@ main {
   display: flex;
   flex-direction: row;
   margin: 0 0 4rem 2rem;
-}
 
-.sign-up {
   p:first-child {
     color: #ff3998;
     text-transform: uppercase;
@@ -114,6 +112,123 @@ main {
     line-height: 30px;
     margin: 0;
     padding-top: 1rem;
+  }
+}
+
+.companies {
+  display: grid;
+  margin: 2.5rem 2rem;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: left;
+
+  img {
+    padding: 0rem 1rem;
+  }
+
+  img:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  img:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  img:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  img:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  img:nth-child(4) {
+    display: none;
+  }
+}
+
+.auction {
+  margin: 2.5rem 2rem;
+
+  h1 {
+    color: #111111;
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  p {
+    color: #555555;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .card {
+    width: 290px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    margin-top: 3rem;
+
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+
+      p {
+        font-weight: 400;
+        color: #777777;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      div:nth-child(1) {
+        text-align: start;
+      }
+
+      div:nth-child(2) {
+        text-align: end;
+      }
+
+      #eth {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          padding-right: 5px;
+          height: 20px;
+        }
+      }
+
+      #gloop {
+        text-transform: uppercase;
+        color: #ff8139;
+        font-size: 12px;
+      }
+
+      #bid {
+        text-transform: uppercase;
+        color: #777777;
+        font-size: 12px;
+      }
+
+      h4 {
+        margin: 0;
+        color: #111111;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
   }
 }
 /* Created with https://www.css-gradient.com */
