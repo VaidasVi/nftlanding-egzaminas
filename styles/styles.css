@@ -89,12 +89,8 @@ main {
   font-weight: 600;
 }
 
-.sign-up .image {
-  background-image: url("/assets/graphic.png");
-  background-repeat: no-repeat;
-  background-position: 10% 10%;
-  background-size: 200%;
-  width: 100%;
+.sign-up img {
+  width: 150%;
 }
 
 .sign-up .signup-content {
@@ -412,6 +408,23 @@ footer .copyright p:last-child {
   }
   header nav a:last-child {
     color: #ff3998;
+  }
+  .sign-up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sign-up .image {
+    width: 100%;
+  }
+  .sign-up .image img {
+    width: 100%;
+  }
+  .sign-up .signup-content {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

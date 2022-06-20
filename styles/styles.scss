@@ -76,12 +76,8 @@ main {
     font-weight: 600;
   }
 
-  .image {
-    background-image: url("/assets/graphic.png");
-    background-repeat: no-repeat;
-    background-position: 10% 10%;
-    background-size: 200%;
-    width: 100%;
+  img {
+    width: 150%;
   }
 
   .signup-content {
@@ -361,6 +357,23 @@ footer {
       a:last-child {
         color: #ff3998;
       }
+    }
+  }
+
+  .sign-up {
+    display: flex;
+    justify-content: space-between;
+
+    .image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .signup-content {
+      width: 100%;
     }
   }
 }
