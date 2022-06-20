@@ -432,5 +432,17 @@ footer .copyright p:last-child {
   .early-birds div {
     padding: 6rem 1rem 1rem 2rem;
   }
+  .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 5rem 0;
+  }
+  .companies img {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
