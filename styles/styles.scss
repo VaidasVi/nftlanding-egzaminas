@@ -1,0 +1,473 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+// Mobile Version
+
+.hamburger-icon {
+  width: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 4rem 2rem;
+
+  p:first-child {
+    color: #ff3998;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+  }
+
+  p:nth-child(3) {
+    color: #555555;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .button {
+    margin-top: 2rem;
+    width: 170px;
+    border: 4px solid transparent;
+    border-radius: 50px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to right, white, white),
+      linear-gradient(140deg, #ff3998, #ff8139, #39ffa0);
+  }
+
+  .btn {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.2rem 1.8rem;
+    width: 10rem;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  img {
+    width: 150%;
+  }
+
+  .signup-content {
+    padding-top: 4.5rem;
+  }
+}
+
+.early-birds {
+  text-align: left;
+  padding: 2rem;
+  background-image: url("/assets/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 2rem;
+
+  div {
+    padding: 3.5rem 0 0.1rem 0;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding-top: 1rem;
+  }
+}
+
+.companies {
+  display: grid;
+  margin: 2.5rem 2rem;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: start;
+
+  img {
+    padding: 0 1.5rem;
+  }
+
+  img:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  img:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  img:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  img:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  img:nth-child(4) {
+    display: none;
+  }
+}
+
+.auction {
+  margin: 2.5rem 2rem;
+
+  h1 {
+    color: #111111;
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  p {
+    color: #555555;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .card {
+    width: 290px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+    margin-top: 3rem;
+
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+
+      p {
+        font-weight: 400;
+        color: #777777;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      div:nth-child(1) {
+        text-align: start;
+      }
+
+      div:nth-child(2) {
+        text-align: end;
+      }
+
+      #eth {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          padding-right: 5px;
+          height: 20px;
+        }
+      }
+
+      #gloop {
+        text-transform: uppercase;
+        color: #ff8139;
+        font-size: 12px;
+      }
+
+      #bid {
+        text-transform: uppercase;
+        color: #777777;
+        font-size: 12px;
+      }
+
+      h4 {
+        margin: 0;
+        color: #111111;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+#second-signup-section {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid rgba(119, 119, 119, 0.3);
+  border-bottom: 2px solid rgba(119, 119, 119, 0.3);
+  margin: 0;
+  margin-top: 2.5rem;
+
+  .signup-content {
+    width: 100%;
+    margin: 0 0 5rem 2rem;
+  }
+
+  #btn {
+    margin: 0;
+  }
+
+  .image {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    img {
+      width: 70%;
+    }
+  }
+}
+
+footer {
+  margin: 4rem 2rem;
+
+  .footer-logo {
+    p {
+      color: #555555;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 1.5rem 0;
+      margin: 0;
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+
+      a {
+        color: #999999;
+      }
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 3rem;
+
+    hr {
+      width: 100%;
+      border: 0;
+    }
+
+    ul {
+      padding: 0;
+      margin-right: 5rem;
+      width: 110px;
+      list-style: none;
+
+      li {
+        padding-bottom: 0.6rem;
+        a {
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 20px;
+          color: #555555;
+          text-transform: capitalize;
+        }
+
+        .marker {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 2px;
+        }
+      }
+      li:first-child {
+        padding-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 2.5rem;
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      color: #999999;
+    }
+
+    p:last-child {
+      display: none;
+    }
+  }
+}
+
+// Desktop version
+
+@media screen and (min-width: 625px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    margin: 2.5rem 0;
+    align-items: center;
+
+    .hamburger-icon {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: end;
+
+      a {
+        text-transform: capitalize;
+        padding-left: 1rem;
+        text-decoration: none;
+        color: #555555;
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      a:last-child {
+        color: #ff3998;
+      }
+    }
+  }
+
+  .sign-up {
+    display: flex;
+    justify-content: space-between;
+
+    .image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .signup-content {
+      width: 100%;
+    }
+  }
+
+  .early-birds {
+    border-radius: 30px;
+
+    div {
+      padding: 6rem 1rem 1rem 2rem;
+    }
+  }
+
+  .companies {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+
+    img {
+      padding: 0;
+    }
+  }
+
+  .auction {
+    margin: 2.5rem 0;
+  }
+
+  #second-signup-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid rgba(119, 119, 119, 0.3);
+    border-bottom: 2px solid rgba(119, 119, 119, 0.3);
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    .signup-content {
+      display: flex;
+      justify-content: right;
+      padding: 0;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+    }
+
+    .image {
+      max-height: 30em;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      img {
+        height: 80%;
+      }
+    }
+  }
+
+  footer {
+    margin: 5rem 0 3rem 0;
+
+    .desktop-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer-nav {
+        margin-top: 0;
+        justify-content: right;
+        align-content: center;
+        gap: 3rem;
+
+        ul {
+          margin: 0;
+        }
+        hr {
+          display: none;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 6rem;
+      display: flex;
+      justify-content: space-between;
+
+      p:last-child {
+        display: block;
+      }
+    }
+  }
+}
