@@ -272,10 +272,10 @@ footer {
     .social {
       display: flex;
       flex-direction: row;
-      gap: 15px;
+      gap: 1.5rem;
 
-      img {
-        width: 4%;
+      a {
+        color: #999999;
       }
     }
   }
@@ -297,18 +297,23 @@ footer {
       list-style: none;
 
       li {
-        font-weight: 400;
-        font-size: 20px;
-        color: #555555;
-        text-transform: capitalize;
         padding-bottom: 0.6rem;
-      }
+        a {
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 20px;
+          color: #555555;
+          text-transform: capitalize;
+        }
 
+        .marker {
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 16px;
+          letter-spacing: 2px;
+        }
+      }
       li:first-child {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 16px;
-        letter-spacing: 2px;
         padding-bottom: 1.5rem;
       }
     }
@@ -428,6 +433,40 @@ footer {
       align-items: flex-end;
       img {
         height: 80%;
+      }
+    }
+  }
+
+  footer {
+    margin: 5rem 0 3rem 0;
+
+    .desktop-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer-nav {
+        margin-top: 0;
+        justify-content: right;
+        align-content: center;
+        gap: 3rem;
+
+        ul {
+          margin: 0;
+        }
+        hr {
+          display: none;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 6rem;
+      display: flex;
+      justify-content: space-between;
+
+      p:last-child {
+        display: block;
       }
     }
   }
