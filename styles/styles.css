@@ -426,5 +426,11 @@ footer .copyright p:last-child {
   .sign-up .signup-content {
     width: 100%;
   }
+  .early-birds {
+    border-radius: 30px;
+  }
+  .early-birds div {
+    padding: 6rem 1rem 1rem 2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
