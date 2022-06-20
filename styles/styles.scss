@@ -3,6 +3,8 @@
   font-family: "Inter", sans-serif;
 }
 
+// Mobile Version
+
 .hamburger-icon {
   width: 30px;
 }
@@ -13,9 +15,9 @@ header {
   margin: 2rem;
 }
 
-// nav {
-
-// }
+nav {
+  display: none;
+}
 
 main {
   display: flex;
@@ -323,6 +325,42 @@ footer {
 
     p:last-child {
       display: none;
+    }
+  }
+}
+
+// Desktop version
+
+@media screen and (min-width: 625px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    margin: 2.5rem 0;
+    align-items: center;
+
+    .hamburger-icon {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: end;
+
+      a {
+        text-transform: capitalize;
+        padding-left: 1rem;
+        text-decoration: none;
+        color: #555555;
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      a:last-child {
+        color: #ff3998;
+      }
     }
   }
 }

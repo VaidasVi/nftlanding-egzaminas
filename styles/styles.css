@@ -18,6 +18,10 @@ header {
   margin: 2rem;
 }
 
+nav {
+  display: none;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,5 +378,40 @@ footer .copyright p {
 
 footer .copyright p:last-child {
   display: none;
+}
+
+@media screen and (min-width: 625px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header {
+    margin: 2.5rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hamburger-icon {
+    display: none;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header nav a {
+    text-transform: capitalize;
+    padding-left: 1rem;
+    text-decoration: none;
+    color: #555555;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  header nav a:last-child {
+    color: #ff3998;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
