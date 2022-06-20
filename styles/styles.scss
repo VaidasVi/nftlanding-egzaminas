@@ -231,12 +231,15 @@ main {
 }
 
 #second-signup-section {
+  display: flex;
+  justify-content: space-between;
   border-top: 2px solid rgba(119, 119, 119, 0.3);
   border-bottom: 2px solid rgba(119, 119, 119, 0.3);
   margin: 0;
   margin-top: 2.5rem;
 
-  #second-signup-section-content {
+  .signup-content {
+    width: 100%;
     margin: 0 0 5rem 2rem;
   }
 
@@ -245,11 +248,12 @@ main {
   }
 
   .image {
-    background-image: url("/assets/upsell-footer-image.svg");
-    background-repeat: no-repeat;
-    background-position: -50% 100%;
-    background-size: 100%;
-    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    img {
+      width: 70%;
+    }
   }
 }
 
@@ -392,6 +396,39 @@ footer {
 
     img {
       padding: 0;
+    }
+  }
+
+  .auction {
+    margin: 2.5rem 0;
+  }
+
+  #second-signup-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid rgba(119, 119, 119, 0.3);
+    border-bottom: 2px solid rgba(119, 119, 119, 0.3);
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    .signup-content {
+      display: flex;
+      justify-content: right;
+      padding: 0;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+    }
+
+    .image {
+      max-height: 30em;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      img {
+        height: 80%;
+      }
     }
   }
 }
